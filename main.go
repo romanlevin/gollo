@@ -2,9 +2,9 @@ package main
 
 import (
 	"encoding/json"
-	"os"
 	"log"
 	"net/http"
+	"os"
 	"strconv"
 	"strings"
 	"time"
@@ -36,9 +36,9 @@ func main() {
 	http.ListenAndServe(":8080", nil)
 }
 
-func getMultiWeatherProvider(confFile string) (mw multiWeatherProvider, err error){
+func getMultiWeatherProvider(confFile string) (mw multiWeatherProvider, err error) {
 	var conf struct {
-		WeatherUnderground struct{
+		WeatherUnderground struct {
 			ApiKey string
 		}
 		ForecastIo struct {
