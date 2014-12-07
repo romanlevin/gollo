@@ -1,0 +1,8 @@
+{
+	"weatherUnderground": {
+		"apiKey": ""
+	},
+	"forecastIo": {
+		"apiKey": ""
+	}
+}
