@@ -46,6 +46,7 @@ func getMultiWeatherProvider(confFile string) (mw multiWeatherProvider, err erro
 		}
 	}
 	file, err := os.Open(confFile)
+	defer file.Close()
 	if err != nil {
 		return nil, err
 	}
